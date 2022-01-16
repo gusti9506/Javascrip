@@ -1,0 +1,169 @@
+<meta charset="UTF-8">
+
+HTML
+<br>
+La edad de Mateo es...
+<br>
+?
+
+
+<br>
+JavaScript
+<br>
+<script>
+
+	document.write("La edad de Mateo es...");
+	document.write("?");
+
+</script>
+<br>
+<br>
+
+El salto de linea se puede colocar dentro de los scripts. O sea que se
+
+<br>
+puede usar codigo HTML dentro del script de JS, trabajando de forma dinamica.
+<br>
+<h3>Ejemplo de salto de linea dentro del script.</h3>
+Se coloca el TAG -br> dentro de la orden....documen.write("La edad de mateo es...-br>")
+<br>
+O tambien se le puede agregar una linea...document.write("-br>")
+<br>
+<br>
+<script>
+
+	document.write("La edad de Mateo es...<br>");
+	document.write("<br>");
+	document.write("?");
+
+</script>
+
+<br>
+Si en la linea document.write("?") quito el ? y coloco un numero "x", me mostraria la edad.
+<br>
+Si le saco las comillas al numero "x", tambien funciona perfectamente.
+<br>
+Al estar el numero entre comillas, JS lo toma como string, y sin comillas es un numero.
+<br>
+Tambien se puede hacer calculos matematicos dentro de las comillas, por ejemplo:
+<br>
+se puede hacer (10+15) y dara el resultado correspondiente (25).
+<br>Tambien se puede poner un string mas un numero, por ejemplo:
+<br>
+Se puede colocar("10" + 15), y me da como salida 1015, toma el string "15" y le agrega el num 10
+<br>
+<h3>Ejemplos</h3>
+
+<script>
+
+	document.write("La edad de Mateo es...");
+	document.write("<br>");
+	document.write("21 - 14");
+
+</script>
+
+<br>
+Agregue un salto de linea dentro del script (document.wuite("-br>").
+<br>
+Y agregue una division que me da la edad del vago...document.write(21/3)
+<br>
+
+Ahora sacamos el promedio de edad de 3 personas con 20, 25 y 30 años.
+<br>
+<br>
+<script>
+
+	document.write("Promedio de edad de Juan(20), de Pedro (25) y Jorge(30)...");
+	document.write("<br>");
+	document.write((20+25+30)/3);
+
+</script>
+<br>
+<br>
+A ver ahora poniendolo asi:  document.write("Promedio de edad de Juan(20), de Pedro (25) y Jorge(30)..." + 20+25+30)
+<br>
+queda todo concatenado, el string y los numeros, como se ve abajo.
+<br>
+<br>
+<script>
+
+	document.write("Promedio de edad de Juan(20), de Pedro (25) y Jorge(30)..." + 20+25+30);
+
+</script>
+
+<h3>Mas practicas</h3>
+
+<script>
+
+	document.write("En que año nacio Juan...");
+	document.write("<br>");
+	document.write(2022 - 20);
+
+</script>
+<br>
+<br>
+
+<script>
+
+	document.write("En que año nacio Pedro...");
+	document.write("<br>");
+	document.write(2022 - 25);
+
+</script>
+
+<br>
+<br>
+
+<script>
+
+	document.write("En que año nacio Jorge...");
+	document.write("<br>");
+	document.write(2022 - 30);
+
+</script>
+<br>
+
+<h3>Actividades del video Operaciones con numeros y textos</h3>
+
+
+
+<script>
+
+    document.write(12 + " años");
+
+</script>
+<br>
+Script 1= 12 años    ===document.write(12 + " años")
+<br>
+<hr>
+
+<script>
+
+    document.write(Mi edad es + 12);
+
+</script>
+<br>
+Script 2= Error de sintaxis    ===document.write(Mi edad es + 12)
+<br>
+<hr>
+
+<script>
+
+    document.write("Media calculada " + 20);
+
+</script>
+<br>
+Script 3= Media calculada 20    ===("Media calculada " + 20)
+<br>
+<hr>
+
+<script>
+
+    document.write(10 + 20);
+
+</script>
+<br>
+Script 4= 30    ===document.write(10 + 20)
+<br>
+<hr>
+

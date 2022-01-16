@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+
+<h2>JavaScript</h2>
+
+
+
+<br>
+<br>
+Para agregar varios saltos de linea y no escribir tantas lineas de codigo
+<br>
+se puede crear una variable y darle valor con "x" cantidad de saltos de linea.
+<br>
+Por ejemplo: var saltoLinea = "-br>-br>" y asi llamando a la variable con document.write(),
+<br>
+ le agrego 2 saltos de linea al codigo donde quiera, dentro del script.
+ <br>
+ <br>
+<script>
+
+	var anho = 2025;
+	var saltoLinea = "<br><br><br>"
+
+	document.write("Juan tiene: " + (anho - 2000) + " años");
+    document.write(saltoLinea);
+    document.write("Pedro tiene: " + (anho - 1995) + " años");
+	document.write(saltoLinea);
+
+	anho = 2030;
+
+
+	document.write("Carlos tiene: " + (anho - 2005) + " años");
+	document.write("<br>");
+
+
+</script>

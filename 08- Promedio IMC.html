@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<h1>Programa Calcular IMC (masa corporal):</h1>
+
+<script>
+
+    function saltarlinea() {
+
+    	document.write("<br><br>");
+    }
+    
+    function imprimir(texto) {
+
+        document.write(texto);
+        saltarlinea();
+    }
+
+    function imc(peso1,altura1) {  //ahora hacemos lo mismo pero con una funcion, para ahorrar tipeo.
+
+       calcular1 = peso1 / (altura1 * altura1); //se realiza la formula IMC
+       return(calcular1); //retorna el resultado de la formula IMC
+        
+    }
+
+     
+    nombre = prompt("Digite su nombre:");
+    pesoCalculado = prompt(nombre + " ahora digite su peso:"); 
+    alturaCalculada = prompt(nombre + " ahora digite su altura:");
+
+    imcCalculado = imc(pesoCalculado,alturaCalculada);
+    imprimir(nombre +", su IMC es de:  " + imcCalculado);
+
+    if (imcCalculado <= 18.5) {
+        imprimir("Su IMC es insuficiente");
+
+    }
+
+    if (imcCalculado >= 18.5) {  //una manera de hacerlo con mas de un parametro.
+        if (imcCalculado <25) {
+        imprimir("Si IMC es normal");
+        }
+    }
+
+    if (imcCalculado >= 25 && imcCalculado < 30) { //otra manera de hacerlos con 2 parametros.
+        imprimir("Su IMC es con sobrepeso");
+
+    }
+
+    if (imcCalculado > 30) {
+        imprimir("Su IMC es considerado obesidad");
+
+    }
+
+</script>

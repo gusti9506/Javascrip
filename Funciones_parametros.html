@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+   // funcion para insertar 2 saltos de linea al ser llamada.
+   // tambien se podia hacer colocando 2 lineas de: document.write("<br>")
+   function saltarlinea() {
+
+    	document.write("<br><br>");
+    }
+    
+    // funcion para reemplazar la orden document.write()
+    // dentro de esta fucion tambien utilizamos saltarlinea(), funcion anterior
+    // o sea que se agregan dos saltos de linea al usar imprimir()
+    function imprimir(texto) {
+
+    	document.write(texto);
+    	saltarlinea();
+    }
+
+	var anho = 2025;
+   
+	imprimir("Juan tiene: " + (anho - 2000) + " años");
+   
+    imprimir("Pedro tiene: " + (anho - 1995) + " años");
+	
+
+	anho = 2030;
+
+
+	imprimir("Carlos tiene: " + (anho - 2005) + " años");
+	saltarlinea();
+  
+    imprimir("Las funciones se crean al inicio del script con la palabra [function] <br> y por las convencionesdebe contener un verbo al nombrarla, luego del nombre van () y {}, dentro de los<br> corchetes va la funcion a crear.<br> El profesor creo una linea document.write[-br>] por cada salto,<br> y yo agregue dos veces el salto de linea entre los (), o sea document.wrtite[-br>-br>]<br> las funciones como 'document.write[], alert[], son por defecto de JS");
+
+</script>
+
+
+
+
